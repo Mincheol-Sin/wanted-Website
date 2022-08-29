@@ -22,6 +22,8 @@ button {
   border: none;
   padding: 0;
   margin: 0;
+  cursor: pointer;
+  display: block;
 }
 
 /* Header */
@@ -30,6 +32,8 @@ header {
   position: fixed;
   top: 0;
   border-bottom: 1px solid #e1e2e3;
+  z-index: 999;
+  background-color: white;
 }
 
 .nav {
@@ -42,15 +46,20 @@ header {
   align-items: center;
 }
 
-.nav .logo .title {
-  font-size: 17px;
-  font-weight: bold;
+.nav .logo {
+  display: flex;
+  align-items: center;
 }
 
 .nav .logo .menu-btn {
   width: 17px;
   height: 14px;
-  margin-right: 5px;
+  margin-right: 15px;
+}
+
+.nav .logo .title {
+  font-size: 22px;
+  font-weight: bold;
 }
 
 .nav .main-menu {
@@ -71,7 +80,6 @@ header {
 
 .nav .sub-menu button {
   padding: 0 10px;
-  cursor: pointer;
 }
 
 .nav .sub-menu svg {
@@ -106,4 +114,84 @@ header {
   color: #666;
   padding: 0 10px;
   margin-left: 15px;
+}
+
+/* top-banner 영역 */
+.top-banner {
+  margin-top: 50px;
+  padding-top: 25px;
+}
+
+.swiper-slide {
+  text-align: center;
+}
+
+/* line-banner 영역 */
+.line-banner {
+  margin: 60px auto;
+  text-align: center;
+}
+
+.line-banner a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    90deg,
+    #01a9fe -12%,
+    #2f5fef 37%,
+    #046afe 72%,
+    #00d2dd 110%
+  );
+  border-radius: 38.5px;
+  max-width: 1060px;
+  margin: auto auto;
+  padding: 21px 30px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.line-banner svg {
+  width: 28px;
+  height: 28px;
+  margin-right: 15px;
+}
+
+/* matching article */
+.matching {
+  background-color: rgb(245, 248, 251);
+  padding-bottom: 60px;
+}
+
+.matching .matching-content {
+  text-align: center;
+}
+
+.matching .matching-content h2 {
+  margin-bottom: 6px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 6px;
+}
+
+.matching .matching-content h2 img {
+  width: 114px;
+  margin-right: 3px;
+}
+
+.matching .matching-content h3 {
+  color: #555;
+  font-size: 16px;
+}
+
+.matching button {
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color: #36f;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fefefe;
+  margin: 26px auto 0 auto;
 }
