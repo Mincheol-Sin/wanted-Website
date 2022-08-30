@@ -121,18 +121,45 @@ header {
 .top-banner {
   margin-top: 50px;
   padding-top: 25px;
+  width: 100%;
+}
+
+.my-swiper {
+  position: relative;
 }
 
 .swiper {
-  width: 100%;
+  width: 1060px;
   height: 300px;
-}
-
-.swiper-wrapper {
+  overflow: visible !important;
 }
 
 .swiper-slide {
-  text-align: center;
+  position: relative;
+}
+
+.swiper-slide .info {
+  position: absolute;
+  bottom: 28px;
+  width: 330px;
+  height: 146px;
+  border-radius: 4px;
+  background-color: #fff;
+  opacity: 1;
+  text-align: left;
+  left: 34px;
+}
+
+.swiper-slide .info h2 {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 700;
+  color: #333;
+}
+
+.swiper-slide img {
+  border-radius: 5px;
 }
 
 /* line-banner 영역 */
@@ -224,13 +251,13 @@ header {
 
 /* careerBanner */
 .careerBanner {
-  width: 100%;
   height: 150px;
   background: linear-gradient(90deg, #ddebff -0.28%, #b7d8ff);
   margin: 20px 0 60px;
 }
 
 .careerBanner .careerBanner__container {
+  width: 90%;
   height: inherit;
   display: flex;
   justify-content: space-between;
@@ -259,4 +286,57 @@ header {
 .careerBanner .careerBanner__container img {
   width: 236px;
   height: 169px;
+}
+
+/* shortcut__container */
+.shortcut__container {
+  width: 90%;
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 60px 0 85px;
+}
+
+.shortcut__container ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.shortcut__container ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  flex: 1 0;
+}
+
+.shortcut__container ul li:first-child {
+  background-color: #f2f5ff;
+  border-top-left-radius: 38.5px;
+  border-bottom-left-radius: 38.5px;
+  border-left: none;
+}
+
+.shortcut__container ul li:last-child {
+  background-color: #f2fbf5;
+  border-top-right-radius: 38.5px;
+  border-bottom-right-radius: 38.5px;
+}
+
+.shortcut__container ul li button {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.shortcut__container ul li button svg {
+  margin-right: 12px;
+  margin-bottom: 4px;
+}
+
+/* companyIntroduce */
+.companyIntroduce {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1060px;
 }

@@ -6,7 +6,8 @@ const swiper = new Swiper(".top-banner .swiper", {
     delay: 3500,
   },
   loop: true, // 반복재생 여부
-
+  spaceBetween: 25,
+  
   // Navigation arrows
   navigation: {
     nextEl: ".swiper-button-next",
