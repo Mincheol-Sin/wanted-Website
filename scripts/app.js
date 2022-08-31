@@ -1,4 +1,4 @@
-const swiper = new Swiper(".top-banner .swiper", {
+const swiper = new Swiper(".first-swiper", {
   // Optional parameters
   direction: "horizontal", // 슬라이드 방향
   autoplay: {
@@ -6,8 +6,22 @@ const swiper = new Swiper(".top-banner .swiper", {
     delay: 3500,
   },
   loop: true, // 반복재생 여부
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+const swiper2 = new Swiper(".second-swiper", {
+  // Optional parameters
+  direction: "horizontal", // 슬라이드 방향
+  loop: true, // 반복재생 여부
   spaceBetween: 25,
-  
+  slidesPerView: 2,
+  slidesPerGroup: 2,
+
   // Navigation arrows
   navigation: {
     nextEl: ".swiper-button-next",

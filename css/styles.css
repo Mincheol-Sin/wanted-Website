@@ -16,6 +16,10 @@ a {
   color: inherit;
 }
 
+.first-swiper {
+  text-align: center;
+}
+
 button {
   font-family: inherit;
   color: inherit;
@@ -25,6 +29,10 @@ button {
   margin: 0;
   cursor: pointer;
   display: block;
+}
+
+.flex {
+  display: flex;
 }
 
 /* Header */
@@ -48,19 +56,24 @@ header {
 }
 
 .nav .logo {
-  display: flex;
   align-items: center;
 }
 
 .nav .logo .menu-btn {
   width: 17px;
   height: 14px;
-  margin-right: 15px;
+  margin-right: 12px;
+  margin-top: 1px;
 }
 
 .nav .logo .title {
-  font-size: 22px;
-  font-weight: bold;
+  width: 84px;
+  height: 25px;
+}
+
+.nav .logo .title img {
+  width: 100%;
+  height: 100%;
 }
 
 .nav .main-menu {
@@ -124,18 +137,8 @@ header {
   width: 100%;
 }
 
-.my-swiper {
-  position: relative;
-}
-
-.swiper {
-  width: 1060px;
+.first-swiper {
   height: 300px;
-  overflow: visible !important;
-}
-
-.swiper-slide {
-  position: relative;
 }
 
 .swiper-slide .info {
@@ -339,4 +342,80 @@ header {
   width: 90%;
   margin: 0 auto;
   max-width: 1060px;
+}
+
+.companyIntroduce .companyIntroduce__container {
+  margin-bottom: 90px;
+  text-align: center;
+}
+
+.companyIntroduce .companyIntroduce__container h2 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  padding-top: 36px;
+  margin-bottom: 9px;
+  display: flex;
+  justify-content: center;
+}
+
+.companyIntroduce .companyIntroduce__container h2 img {
+  position: relative;
+  bottom: 2px;
+  width: 24px;
+  height: 24px;
+  margin: 0 8px 0 4px;
+}
+
+.companyIntroduce .companyIntroduce__container h2 span {
+  font-weight: 400;
+}
+
+.companyIntroduce .companyIntroduce__container p {
+  font-size: 15px;
+  color: #767676;
+}
+
+.companyIntroduce__card__picture {
+  width: 100%;
+  height: 280px;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.companyIntroduce__card__content__container {
+  justify-content: space-between;
+  margin-top: 17px;
+}
+
+.companyIntroduce__card__content {
+  text-align: left;
+}
+
+.companyIntroduce__card__content h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.companyIntroduce__card__content__img {
+  width: 42px;
+  height: 42px;
+  margin-right: 12px;
+  box-shadow: inset 0 0 0 1px rgb(0 0 0 / 10%);
+  background-position: center;
+}
+
+.companyIntroduce__card__content__container button {
+  font-size: 15px;
+  font-weight: 700;
+  border: 1px solid #e1e2e3;
+  border-radius: 25px;
+  color: #36f;
+  background-color: #fff;
+  padding: 5px 25.5px;
+}
+
+.second-swiper {
+  margin-top: 20px;
 }
