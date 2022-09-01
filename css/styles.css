@@ -481,3 +481,66 @@ header {
   color: #666;
   bottom: 10px;
 }
+
+/* featuredJobList */
+.featuredJobList {
+  width: 90%;
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 70px 0 50px;
+}
+
+.featuredJobList h2 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.05;
+  color: #111;
+  margin-bottom: 30px;
+}
+
+.job-list {
+  margin: -10px;
+}
+
+.job-card {
+  width: 25%;
+  padding: 10px;
+}
+
+.job-card-header {
+  padding-bottom: 75%;
+  position: relative;
+  background-size: cover;
+  background-position: 50%;
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 1px rgb(0 0 0 / 10%);
+}
+
+.job-card-body {
+  padding: 14px 0;
+}
+
+.job-card-body h3 {
+  color: #333;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.job-card-body .job-card-company-name {
+  font-weight: 600;
+  margin-top: 8px;
+  line-height: normal;
+}
+
+.job-card-body .job-card-company-location {
+  font-weight: 400;
+  color: #999;
+  margin-top: 8px;
+  line-height: normal;
+}
+
+.job-card-body .job-card-reward {
+  font-weight: 500;
+  margin-top: 8px;
+}
