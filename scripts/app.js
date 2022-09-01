@@ -5,7 +5,8 @@ const swiper = new Swiper(".first-swiper", {
     // 자동재생 여부
     delay: 3500,
   },
-  loop: true, // 반복재생 여부
+  loop: true,
+  spaceBetween: 25, // 반복재생 여부
 
   // Navigation arrows
   navigation: {
