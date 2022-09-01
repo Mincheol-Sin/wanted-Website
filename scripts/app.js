@@ -18,7 +18,7 @@ const swiper2 = new Swiper(".second-swiper", {
   // Optional parameters
   direction: "horizontal", // 슬라이드 방향
   loop: true, // 반복재생 여부
-  spaceBetween: 25,
+  spaceBetween: 20,
   slidesPerView: 2,
   slidesPerGroup: 2,
 
