@@ -5,8 +5,8 @@ const swiper = new Swiper(".first-swiper", {
     // 자동재생 여부
     delay: 3500,
   },
-  loop: true,
-  spaceBetween: 25, // 반복재생 여부
+  loop: true, // 반복재생 여부
+  spaceBetween: 25,
 
   // Navigation arrows
   navigation: {
@@ -29,3 +29,4 @@ const swiper2 = new Swiper(".second-swiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
